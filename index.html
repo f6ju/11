@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>IM KOMBO FAN PORTAL</h1>
+
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="side2.html">Nyheter</a>
+        <a href="side3.html">Diskusjon</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Velkommen!</h2>
+        <p>Dette er en fan portal for den mystiske IM kombo.</p>
+        <a href="side2.html" class="knapp">Se nyheter</a>
+    </section>
+
+    <section>
+        <h2>Populært akkurat nå</h2>
+
+        <div class="kort-container">
+
+            <article class="kort">
+                <img src="https://picsum.photos/400/250?random=1" alt="Bilde">
+                <h3>Nyhet</h3>
+                <p>Her kan du skrive litt om nyheten.</p>
+                <button onclick="lik(this)">♡ Lik</button>
+            </article>
+
+            <article class="kort">
+                <img src="https://picsum.photos/400/250?random=2" alt="Bilde">
+                <h3>Ny oppdatering</h3>
+                <p>Hvor er IM trioen etter det som skjedde?.</p>
+                <button onclick="lik(this)">♡ Lik</button>
+            </article>
+
+            <article class="kort">
+                <img src="https://picsum.photos/400/250?random=3" alt="Bilde">
+                <h3>Fellesskap</h3>
+                <p>Snakk med andre fans her.</p>
+                <button onclick="lik(this)">♡ Lik</button>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>IM kombo © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

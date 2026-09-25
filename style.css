@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    color: #222;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.hero {
+    background: white;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.knapp {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.kort-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.kort {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.kort img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+button {
+    padding: 8px 12px;
+    border: 1px solid #aaa;
+    background: white;
+    cursor: pointer;
+}
+
+.kommentar {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobil */
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .kort-container {
+        grid-template-columns: 1fr;
+    }
+}

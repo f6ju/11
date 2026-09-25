@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diskusjon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>IM KOMBO FAN PORTAL</h1>
+
+    <nav>
+        <a href="index.html">Hjem</a>
+        <a href="side2.html">Nyheter</a>
+        <a href="side3.html">Diskusjon</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Diskusjon</h2>
+
+    <div id="kommentarer">
+
+        <div class="kommentar">
+            <b>Alex</b>
+            <p>IM komboen er deilig!</p>
+            <button onclick="lik(this)">♡ Lik</button>
+        </div>
+
+        <div class="kommentar">
+            <b>Ola</b>
+            <p>Jeg er enig, kjøper den daglig!</p>
+            <button onclick="lik(this)">♡ Lik</button>
+        </div>
+
+    </div>
+
+    <form onsubmit="leggTilKommentar(event)">
+        <input id="navn" type="text" placeholder="Navnet ditt" required>
+
+        <textarea id="tekst" placeholder="Skriv en kommentar..." required></textarea>
+
+        <button class="knapp" type="submit">Legg ut</button>
+    </form>
+
+</main>
+
+<footer>
+    <p>IM kombo © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
